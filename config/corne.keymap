@@ -134,7 +134,7 @@
 &trans  &kp Q  &kp W  &kp E           &kp R            &kp T                      &kp Y                  &kp U        &kp I      &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D           &kp F            &kp G                      &kp H                  &kp J        &kp K      &kp L    &kp SEMI  &trans
 &trans  &kp Z  &kp X  &kp C           &kp V            &kp B                      &kp N                  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &kp LEFT_SHIFT  &lt 2 BACKSPACE  &mt ESCAPE LEFT_CONTROL    &mt RIGHT_SHIFT ENTER  &lt 1 SPACE  &mo 3
+                      &kp LEFT_SHIFT  &lt 2 BACKSPACE  &mt LEFT_CONTROL ESCAPE    &mt RIGHT_SHIFT ENTER  &lt 1 SPACE  &mo 3
             >;
         };
 
