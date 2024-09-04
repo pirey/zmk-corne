@@ -1,17 +1,32 @@
 # Corne ZMK 5 columns
 
-ZMK Corne untuk Super Mini / Promicro Wireless NRF52840.
+ZMK Corne for Super Mini / Promicro Wireless NRF52840.
 
-ZMK Keymap Editor https://nickcoutsos.github.io/keymap-editor/ Tutorial Mapping ZMK https://youtu.be/cAi5pnkz48M
+ZMK Keymap Editor https://nickcoutsos.github.io/keymap-editor/
 
-Setelah firmware di download, tekan 2x tombol reset saat USB terhubung. lalu tinggal extract dan drop file .uf2 nya di disk bootloader.
+Tutorial Mapping ZMK https://youtu.be/cAi5pnkz48M
+
+## How
+
+- Push changes to github
+- Github will run actions to build the firmware
+- Download the firmware (.uf2)
+- Connect board to USB
+- Press reset button twice, board will enter bootloader and mounted as media
+- Install the firmware to board
 
 ## Base Layer
 
+![base_layer.png](./base_layer.png)
+
 ## Number & Nav Layer
+
+![num_nav_layer.png](./num_nav_layer.png)
 
 ## Symbols & Media Layer
 
+![symbols_layer.png](./symbols_layer.png)
+
 ## System Layer
 
-## Mouse Layer
+![sys_layer.png](./sys_layer.png)
