@@ -9,10 +9,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <200>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    flavor = "balanced";
 };
 
 &lt { tapping-term-ms = <200>; };
@@ -21,31 +19,9 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp ESCAPE>;
-        };
-
-        combo_bksp {
-            timeout-ms = <50>;
-            key-positions = <10 9>;
-            bindings = <&kp BACKSPACE>;
-        };
-
-        combo_tab {
-            bindings = <&kp TAB>;
-            key-positions = <13 14>;
-        };
-
         combo_shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <25 26>;
-        };
-
-        combo_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <21 22>;
         };
 
         combo_rshift {
@@ -53,74 +29,9 @@
             key-positions = <33 34>;
         };
 
-        exclm {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <1 13>;
-        };
-
-        at {
-            bindings = <&kp AT_SIGN>;
-            key-positions = <2 14>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
-            key-positions = <3 15>;
-        };
-
-        dllr {
-            bindings = <&kp DOLLAR>;
-            key-positions = <4 16>;
-        };
-
-        percnt {
-            bindings = <&kp PERCENT>;
-            key-positions = <5 17>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <6 18>;
-        };
-
-        and {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <7 19>;
-        };
-
-        str {
-            bindings = <&kp ASTERISK>;
-            key-positions = <8 20>;
-        };
-
-        leftparen {
-            bindings = <&kp LPAR>;
-            key-positions = <9 21>;
-        };
-
-        rparen {
-            bindings = <&kp RPAR>;
-            key-positions = <10 22>;
-        };
-
-        layout_switch {
-            bindings = <&tog 0>;
-            key-positions = <36 37 40 41>;
-        };
-
-        system_reset {
-            bindings = <&sys_reset>;
-            key-positions = <3 4 5>;
-        };
-
-        bootloader {
-            bindings = <&bootloader>;
-            key-positions = <15 16 17>;
-        };
-
-        system_layer_combo {
-            bindings = <&mo 0>;
-            key-positions = <36 37>;
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <32 33>;
         };
     };
 
@@ -158,10 +69,10 @@
 
         sys_layer {
             bindings = <
-&trans  &trans        &trans        &bt BT_PRV    &bt BT_NXT    &trans            &none   &trans  &trans  &trans  &soft_off  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans  &none   &none   &none   &none      &trans
-&trans  &bootloader   &sys_reset    &none         &bt BT_CLR    &bt BT_CLR_ALL    &none   &trans  &trans  &trans  &trans     &trans
-                                    &trans        &trans        &trans            &trans  &trans  &trans
+&trans  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4     &none   &trans  &trans  &trans  &soft_off  &trans
+&trans  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4      &trans  &none   &none   &none   &none      &trans
+&trans  &bootloader    &sys_reset     &none          &bt BT_CLR     &bt BT_CLR_ALL    &none   &trans  &trans  &trans  &trans     &trans
+                                      &trans         &trans         &trans            &trans  &trans  &trans
             >;
         };
     };
