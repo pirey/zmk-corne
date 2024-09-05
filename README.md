@@ -4,8 +4,6 @@ ZMK Corne for Super Mini / Promicro Wireless NRF52840.
 
 ZMK Keymap Editor https://nickcoutsos.github.io/keymap-editor/
 
-Tutorial Mapping ZMK https://youtu.be/cAi5pnkz48M
-
 ## How
 
 - Push changes to github
