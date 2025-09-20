@@ -42,19 +42,19 @@
 
         base {
             bindings = <
-&trans  &kp Q  &kp W  &kp E             &kp R            &kp T                      &kp Y                  &kp U        &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D             &kp F            &kp G                      &kp H                  &kp J        &kp K      &kp L    &kp SEMI  &trans
-&trans  &kp Z  &kp X  &kp C             &kp V            &kp B                      &kp N                  &kp M        &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &kp LEFT_COMMAND  &lt 2 BACKSPACE  &mt LEFT_CONTROL ESCAPE    &mt RIGHT_SHIFT ENTER  &lt 1 SPACE  &mo 3
+&trans  &kp Q  &kp W  &kp E           &kp R            &kp T                      &kp Y        &kp U        &kp I            &kp O    &kp P     &trans
+&trans  &kp A  &kp S  &kp D           &kp F            &kp G                      &kp H        &kp J        &kp K            &kp L    &kp SEMI  &trans
+&trans  &kp Z  &kp X  &kp C           &kp V            &kp B                      &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &trans
+                      &kp LEFT_SHIFT  &lt 2 BACKSPACE  &mt LEFT_CONTROL ESCAPE    &lt 3 ENTER  &lt 1 SPACE  &kp RIGHT_SHIFT
             >;
         };
 
         number_nav {
             bindings = <
-&trans  &kp N1    &kp N2     &kp N3     &kp N4         &kp N5             &kp NUMBER_6  &kp NUMBER_7  &kp N8  &kp N9     &kp N0        &trans
-&trans  &kp LALT  &kp LSHFT  &kp LCTRL  &kp TAB        &kp LGUI           &kp LEFT      &kp DOWN      &kp UP  &kp RIGHT  &kp COLON     &trans
-&trans  &none     &none      &none      &none          &kp PRINTSCREEN    &kp F11       &none         &trans  &trans     &kp QUESTION  &trans
-                             &trans     &kp BACKSPACE  &kp DELETE         &trans        &trans        &trans
+&trans  &kp N1    &kp N2     &kp N3        &kp N4         &kp N5             &kp NUMBER_6  &kp NUMBER_7  &kp N8  &kp N9     &kp N0        &trans
+&trans  &kp LALT  &kp LSHFT  &kp LCTRL     &kp TAB        &none              &kp LEFT      &kp DOWN      &kp UP  &kp RIGHT  &kp COLON     &trans
+&trans  &none     &none      &none         &none          &kp PRINTSCREEN    &kp F11       &none         &trans  &trans     &kp QUESTION  &trans
+                             &kp LEFT_GUI  &kp BACKSPACE  &kp DELETE         &trans        &trans        &trans
             >;
         };
 
